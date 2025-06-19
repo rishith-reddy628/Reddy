@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .header {
+        width: 100%;
+        height: 75px;
+        position: fixed;
+        top: 0;
+        background-color: lightgreen;
+        color: white;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .footer {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        bottom: 0;
+        background-color: blueviolet;
+        color: white;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .sidebar {
+        width: 200px;
+        height: calc(100vh - 135px); /* full height minus header and footer */
+        position: fixed;
+        top: 75px;
+        left: 0;
+        background-color: gray;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .content {
+        margin-left: 200px;
+        margin-top: 75px;
+        margin-bottom: 60px;
+        padding: 20px;
+        background-color: rgb(216, 216, 14);
+        height: calc(100vh - 135px);
+        box-sizing: border-box;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <a
+          href="https://www.mallareddyuniversity.ac.in/"
+          class="button"
+          style="margin-right: 10px"
+          color="white"
+          >HOME</a
+        >
+        <a
+          href="https://excelr.fermion.app/login"
+          class="button"
+          style="margin-right: 10px"
+          color="white"
+          >ABOUT</a
+        >
+        <a href="https://poki.com/" class="button" color="white">CONTACT</a>
+      </nav>
+    </div>
+    <div class="footer">Footer</div>
+    <div class="sidebar">Sidebar</div>
+
+    <div class="content">Main Content Area</div>
+  </body>
+</html>

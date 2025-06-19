@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 75px;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+      }
+
+      .header-content {
+        font-size: 16px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px; /* space between header items */
+      }
+
+      .block2 {
+        display: flex;
+        margin-top: 75px; /* to avoid overlap with fixed header */
+        height: calc(100vh - 75px);
+        background-color: bisque;
+      }
+
+      aside {
+        flex: 0 0 100px;
+        background-color: aqua;
+      }
+
+      .block3 {
+        flex: 1;
+        background-color: lightblue;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      footer {
+        width: 100%;
+        height: 50px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div><a href="">Home</a></div>
+        <div><a href="">About-US</a></div>
+        <div><a href="">Contact-Us</a></div>
+      </div>
+    </header>
+
+    <div class="block2">
+      <aside>
+        <div>Student Form</div>
+        <div>Student Report</div>
+      </aside>
+
+      <main class="block3">
+        <section class="content">Content</section>
+        <footer>Footer</footer>
+      </main>
+    </div>
+  </body>
+</html>

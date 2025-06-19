@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        display: flex;
+        width: 100%;
+        height: 75px;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to right, hsla(32, 95.30%, 50.40%, 0.99) 0%, rgb(21, 237, 35) 100%);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+      .header-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+      }
+      .header-content a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .sidebar {
+        position: fixed;
+        top: 75px; /* below header */
+        left: 0;
+        width: 200px;
+        height: calc(100vh - 75px); /* full viewport minus header */
+        background-color: gray;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }  
+      .main {
+        margin-left: 200px; /* same width as sidebar */
+        padding: 20px;
+        padding-top: 95px; /* to clear header height + some spacing */
+      }
+      /* Optional: style content and footer */
+      .content {
+        background: #f9f9f9;
+        padding: 20px;
+        min-height: 400px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      }
+      footer {
+        margin-top: 20px;
+        text-align: center;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div><a href="https://www.mallareddyuniversity.ac.in/">HOME</a></div>
+        <div><a href="https://excelr.fermion.app/login">ABOUT</a></div>
+        <div><a href="https://poki.com/">CONTACT</a></div>
+      </div>
+    </header> 
+
+    <div class="sidebar">
+  <aside>
+    <nav>
+      <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction: column; gap: 15px;">
+        <li><a href="#" style="color: white; text-decoration: none; font-weight: bold;">Student Form</a></li>
+        <li><a href="#" style="color: white; text-decoration: none; font-weight: bold;">Student Report</a></li>
+      </ul>
+    </nav>
+  </aside>
+</div>
+
+
+    <main class="main">
+      <section class="content">Content</section>
+      <footer>Footer</footer>
+    </main>
+  </body>
+</html>
