@@ -1,0 +1,38 @@
+<html>
+<head>
+    <style>
+        .container{
+            display:flex;
+            flex-wrap:wrap;
+            width:100%;
+            height:auto;
+            background-color:aqua;
+            gap:10px;
+        }
+        .item{
+            flex:1 1 100%;
+            height:100px;
+            background-color:lightpink;
+
+        }
+        @media (min-width:1024px){
+            .item{
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (min-width:1248px){
+            .item{
+                flex: 1 1 calc(25% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+</body>
+</html>
